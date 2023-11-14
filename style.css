@@ -69,3 +69,14 @@ button{
 .secondary{
     color: var(--text-color);
 }
+
+/* CONTROLS */
+
+.running .ph.ph-play-circle,
+.running .ph.ph-timer,
+.music-on .ph.ph-speaker-none,
+html:not(.running) .ph.ph-pause-circle,
+html:not(.running) .ph.ph-stop-circle,
+html:not(.running) .ph.ph-speaker-high{
+    display: none;
+}
