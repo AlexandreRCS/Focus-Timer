@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="scr/main.js" defer></script>
 
     <title>FocusTimer</title>
 </head>
@@ -24,8 +25,10 @@
         </section>
 
         <section id="controls" class="flex">
-            <button class="ph ph-play-circle"></button>
-            <span class="sr-only">Iniciar Contador</span>
+            <button class="ph ph-play-circle">
+                <span class="sr-only">Iniciar Contador</span>
+            </button>
+            
 
             <button class="ph ph-pause-circle"></button>
             <span class="sr-only">Pausar Contador</span>
