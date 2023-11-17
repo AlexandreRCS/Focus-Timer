@@ -1,0 +1,1 @@
+export const  control = document.getElementById('controls')
