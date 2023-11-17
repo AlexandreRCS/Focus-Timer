@@ -1,1 +1,1 @@
-export const  control = document.getElementById('controls')
+export const  controls = document.getElementById('controls')
