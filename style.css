@@ -99,7 +99,7 @@ button{
 .music-on .ph.ph-speaker-none,
 html:not(.running) .ph.ph-pause-circle,
 html:not(.running) .ph.ph-stop-circle,
-html:not(.running) .ph.ph-speaker-high{
+html:not(.music-on) .ph.ph-speaker-high{
     display: none;
 }
 
