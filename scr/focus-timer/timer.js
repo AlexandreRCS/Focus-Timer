@@ -1,5 +1,6 @@
 import  state from "./state.js";
 import * as ele from "./elements.js"
+import { reset } from "./actions.js";
 
 
 export function countdown(){
@@ -7,7 +8,24 @@ export function countdown(){
         return
     }
 
-    console.log('iniciou')
+    let minutes = Number(ele.minutes.textContent)
+    let seconds = Number(ele.seconds.textContent)
+
+    if(seconds > 59){
+        seconds = 59
+    }
+
+    seconds--
+    if(seconds < 0){
+        seconds = 59
+        minutes--
+    }
+
+    if(minutes < 0 ){
+        reset()
+        return
+    }
+    updateScreen(minutes, seconds)
     setTimeout(()=> countdown(), 1000)
 }
 

@@ -3,4 +3,4 @@ import * as focusTimer from "./focus-timer/index.js"
 
 btnToggle
 
-focusTimer.start(3, 7)
+focusTimer.start(1, 7)
